@@ -99,7 +99,16 @@ dialog .x{position:fixed;top:1rem;right:1rem;background:var(--gold);color:var(--
 .pills a:hover{background:var(--gold);color:var(--ember)}
 .tags{opacity:.8;font-size:.95rem;max-width:55ch;margin:0 auto}
 footer{background:var(--ember);text-align:center;padding:2.5rem 1rem;font-size:.9rem;opacity:.9}
-@media(prefers-reduced-motion:reduce){.emblem,.emblem::before,.emblem::after{animation:none!important}*{transition:none!important;scroll-behavior:auto!important}}
+
+/* music */
+.music{position:fixed;left:1rem;bottom:1rem;z-index:30;display:flex;align-items:center;gap:.6rem;padding:.55rem 1rem .55rem .7rem;border-radius:999px;border:1px solid var(--gold);background:rgba(20,7,6,.8);color:var(--ash);font:600 .85rem var(--body);cursor:pointer;backdrop-filter:blur(6px)}
+.music:hover{background:var(--gold);color:var(--ember)}
+.eq{display:flex;align-items:flex-end;gap:3px;height:18px}
+.eq i{width:4px;height:4px;background:var(--flame);border-radius:2px;transition:height .2s}
+.music.on .eq i{animation:bar .9s ease-in-out infinite}
+.music.on .eq i:nth-child(2){animation-delay:.2s}.music.on .eq i:nth-child(3){animation-delay:.45s}.music.on .eq i:nth-child(4){animation-delay:.1s}
+@keyframes bar{0%,100%{height:4px}50%{height:18px}}
+@media(prefers-reduced-motion:reduce){.music.on .eq i{animation:none;height:12px}.emblem,.emblem::before,.emblem::after{animation:none!important}*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
@@ -187,6 +196,8 @@ footer{background:var(--ember);text-align:center;padding:2.5rem 1rem;font-size:.
 
 <footer><span class="emblem ft"><img class="logo" alt=""></span><br>© The Potter’s Vessel Crew International. PVC @10: the countdown continues.</footer>
 
+<audio id="song" src="audio/undignified.mp3" loop preload="auto"></audio>
+<button class="music" id="music" type="button" aria-label="Play or pause music"><span class="eq"><i></i><i></i><i></i><i></i></span><span id="mtxt">Play music</span></button>
 <script>
 // ---- SETTINGS: edit these ----
 const EVENT = new Date(2027, 0, 1, 0, 0, 0);   // 1 Jan 2027, 00:00 (visitor's local time)
@@ -226,6 +237,15 @@ $('share').onclick = async () => {
   const data = {title:'PVC @10', text:'PVC @10 is coming on 1st January 2027. Anticipate! #PVCAt10', url:location.href};
   try{ navigator.share ? await navigator.share(data) : (await navigator.clipboard.writeText(location.href), $('share').textContent='Link copied'); }catch(e){}
 };
+
+// Background music: tries to start on load; if the browser blocks it, starts on the visitor's first tap/click/scroll
+const song=$('song'),mb=$('music'),mt=$('mtxt');song.volume=.6;
+const ui=on=>{mb.classList.toggle('on',on);mt.textContent=on?'Pause music':'Play music'};
+const go=e=>{if(e&&e.target&&e.target.closest&&e.target.closest('#music'))return;song.play().then(()=>{ui(true);off()}).catch(()=>{})};
+const evs=['pointerdown','keydown','touchstart','wheel','scroll'];
+const off=()=>evs.forEach(e=>removeEventListener(e,go));
+go();evs.forEach(e=>addEventListener(e,go,{passive:true}));
+mb.onclick=e=>{e.stopPropagation();off();if(song.paused){song.play().then(()=>ui(true))}else{song.pause();ui(false)}};
 </script>
 </body>
 </html>
