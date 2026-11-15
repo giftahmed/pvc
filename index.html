@@ -199,7 +199,7 @@ dialog[open]{animation:dlg .35s ease-out}dialog[open]::backdrop{animation:fadein
 .quote{break-inside:avoid;margin:0 0 1.2rem;padding:2rem 1.6rem 1.4rem;border-radius:16px;background:rgba(255,255,255,.05);border-top:3px solid var(--flame);position:relative}
 .quote::before{content:"“";position:absolute;top:-.2rem;left:1rem;font:800 4rem var(--display);color:var(--flame);opacity:.6}
 .quote blockquote{margin:.6rem 0 1rem;font-style:italic}
-.quote figcaption strong{display:block;color:var(--gold)}.quote figcaption span{font-size:.85rem;opacity:.7}
+.quote figcaption{display:flex;align-items:center;gap:.7rem}.quote figcaption img{width:48px;height:48px;flex:none;object-fit:cover;border-radius:50%;border:1px solid var(--gold)}.quote figcaption strong{display:block;color:var(--gold)}.quote figcaption span{font-size:.85rem;opacity:.7}
 .burger{display:none;background:none;border:1px solid var(--gold);color:var(--ash);border-radius:8px;font-size:1.3rem;padding:.1rem .6rem;cursor:pointer}
 @media(max-width:700px){.burger{display:block}nav .links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(20,7,6,.97);padding:1rem 1.25rem;gap:.8rem}nav.open .links{display:flex}nav .links a:not(:last-child){display:inline!important}}
 /* music */
@@ -442,7 +442,7 @@ const mono = n => (n.replace(/^(mr & mrs|min|mrs|mr|pst|pastor|mummy|apostle|psa
 function card(p, cls){
   const key = p.key || slug(p.name);
   const c = document.createElement('div'); c.className = 'card rv';
-  c.innerHTML = '<div class="ph '+(cls||'')+'"><b></b><img loading="lazy"></div><h3></h3><p></p>';
+  c.innerHTML = '<div class="ph '+(cls||p.cardClass||'')+'"><b></b><img loading="lazy"></div><h3></h3><p></p>';
   c.querySelector('b').textContent = mono(p.name);
   const im = c.querySelector('img'); im.alt = p.name; im.src = p.img || 'images/people/'+key+'.jpg'; im.onerror = () => im.remove();
   if(!cls){ c.dataset.full = p.full || 'images/people/full/'+key+'.jpg'; c.dataset.cap = p.name + (p.role ? '  ·  ' + p.role : '');
@@ -482,15 +482,18 @@ D.groups.forEach(c => {
   $('groupCats').append(h, w);
 });
 D.testimonies.forEach(t => { const f = document.createElement('figure'); f.className = 'quote rv';
-  const b = document.createElement('blockquote'); b.textContent = t.text; const c = document.createElement('figcaption'); c.innerHTML = '<strong></strong><span></span>';
-  c.querySelector('strong').textContent = t.name; c.querySelector('span').textContent = t.role; f.append(b, c); $('quotes').appendChild(f); });
+  const b = document.createElement('blockquote'); b.textContent = t.text; const c = document.createElement('figcaption');
+  const im = document.createElement('img'); im.src = t.img; im.alt = t.name; im.loading = 'lazy'; im.onerror = () => im.remove();
+  const byline = document.createElement('div'); const name = document.createElement('strong'); name.textContent = t.name;
+  const role = document.createElement('span'); role.textContent = t.role; byline.append(name, role); c.append(im, byline);
+  f.append(b, c); $('quotes').appendChild(f); });
 $('burger').onclick = () => $('nav').classList.toggle('open');
 document.querySelectorAll('#nav .links a').forEach(a => a.addEventListener('click', () => $('nav').classList.remove('open')));
 
 // Memories
 const items = [];
-D.albums.forEach(a => a.files.forEach(f => { const [file,cap] = Array.isArray(f)?f:[f,a.title];
-  items.push({src:(a.dir||'images/memories/')+file, cap, album:a.title, vid:/\.(mp4|webm|mov)$/i.test(file)}); }));
+D.albums.forEach(a => a.files.forEach(f => { const [file,cap,dir] = Array.isArray(f)?f:[f,a.title,a.dir];
+  items.push({src:(dir||a.dir||'images/memories/')+file, cap, album:a.title, vid:/\.(mp4|webm|mov)$/i.test(file)}); }));
 let cur = 'All', shown = 12, view = [], lb = [], li = 0, dir = 1;
 const box = $('box'), stage = $('stage');
 function draw(){

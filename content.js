@@ -10,23 +10,19 @@ window.PVC = {
  "guests": [
   {
    "name": "Pst. Great Samson",
-   "role": "2027 Guest Minister · Streams of Joy Abuja"
+   "role": "Streams of Joy Abuja"
   },
   {
-   "name": "Pst. Johnson Emerald",
-   "role": "2027 Guest Minister"
+   "name": "Pst. Johnson Emerald"
   },
   {
-   "name": "Pst. Mrs. Eunice",
-   "role": "2027 Guest Minister"
+   "name": "Pst. Mrs. Eunice"
   },
   {
-   "name": "Min. Sam Wisdom",
-   "role": "2027 Guest Minister"
+   "name": "Min. Sam Wisdom"
   },
   {
-   "name": "Min. John MBA",
-   "role": "2027 Guest Minister"
+   "name": "Min. John MBA"
   }
  ],
  "special": [
@@ -43,7 +39,11 @@ window.PVC = {
   {
    "title": "Pvcites 2020",
    "files": [
-    "pvcites-2020-1.jpg"
+    "pvcites-2020-1.jpg",
+    [
+     "freestyle-1.jpg",
+     "Freestyle mode"
+    ]
    ]
   },
   {
@@ -98,7 +98,81 @@ window.PVC = {
     "pictorial-2025-15.jpg",
     "pictorial-2025-16.jpg",
     "pictorial-2025-17.jpg",
-    "pictorial-2025-18.jpg"
+    "pictorial-2025-18.jpg",
+    "pictorial-2025-19.jpg",
+    "pictorial-2025-20.jpg",
+    "pictorial-2025-21.jpg",
+    "pictorial-2025-22.jpg",
+    "pictorial-2025-23.jpg",
+    "pictorial-2025-24.jpg",
+    "pictorial-2025-25.jpg",
+    "pictorial-2025-26.jpg",
+    "pictorial-2025-27.jpg",
+    "pictorial-2025-28.jpg",
+    "pictorial-2025-29.jpg",
+    "pictorial-2025-30.jpg",
+    "pictorial-2025-31.jpg",
+    "pictorial-2025-32.jpg",
+    "pictorial-2025-33.jpg",
+    "pictorial-2025-34.jpg",
+    "pictorial-2025-35.jpg",
+    "pictorial-2025-36.jpg",
+    "pictorial-2025-37.jpg",
+    [
+     "min-gideon.jpg",
+     "Min. Gideon",
+     "images/people/"
+    ],
+    [
+     "min-victoria.jpg",
+     "Min. Victoria",
+     "images/people/"
+    ],
+    [
+     "convener.jpg",
+     "Convener",
+     "images/people/"
+    ],
+    [
+     "min-courage.jpg",
+     "Min. Courage",
+     "images/people/full/"
+    ],
+    [
+     "min-favour.jpg",
+     "Min. Favour",
+     "images/people/full/"
+    ],
+    [
+     "min-gabriel.jpg",
+     "Min. Gabriel",
+     "images/people/full/"
+    ],
+    [
+     "min-gloria.jpg",
+     "Min. Gloria",
+     "images/people/full/"
+    ],
+    [
+     "min-sam.jpg",
+     "Min. Sam",
+     "images/people/full/"
+    ],
+    [
+     "min-u-joseph.jpg",
+     "Min. U. Joseph",
+     "images/people/full/"
+    ],
+    [
+     "pst-johnson.jpg",
+     "Pst. Johnson",
+     "images/people/full/"
+    ],
+    [
+     "zeebass.jpg",
+     "Zeebass",
+     "images/people/full/"
+    ]
    ]
   },
   {
@@ -248,6 +322,13 @@ window.PVC = {
       {
        "name": "Mr. Johnson",
        "role": "Audio and Recordings"
+      },
+      {
+       "name": "JF Sounds",
+       "role": "Sound Engineer",
+       "img": "images/people/jf-sounds.jpg",
+       "full": "images/people/jf-sounds.jpg",
+       "cardClass": "lg2"
       }
      ]
     },
@@ -285,14 +366,6 @@ window.PVC = {
       {
        "name": "Min. Samuel",
        "role": "PVCite"
-      },
-      {
-       "name": "Min. Gideon",
-       "role": "PVCite"
-      },
-      {
-       "name": "Psalmist Sam",
-       "role": "PVCite"
       }
      ]
     }
@@ -315,6 +388,10 @@ window.PVC = {
       },
       {
        "name": "Min. Zeebass",
+       "role": "Bass Guitarist"
+      },
+      {
+       "name": "Psalmist Sam",
        "role": "Bass Guitarist"
       },
       {
@@ -425,10 +502,6 @@ window.PVC = {
       {
        "name": "Mummy Deborah",
        "role": "Life and Relationship Coach"
-      },
-      {
-       "name": "Min. Victoria",
-       "role": "Guest Singer (2023)"
       }
      ]
     }
@@ -778,21 +851,25 @@ window.PVC = {
   {
    "name": "Min. Destiny Kareem",
    "role": "PVCite",
+   "img": "images/people/testimony-destiny-kareem.jpg",
    "text": "PVC (Potters Vessels Crew) has made a great impact on my life, both spiritually and personally. Through PVC, I have experienced spiritual growth, encouragement, love, unity, and a deeper relationship with God. Even when I had an accident a few months ago, I was reminded of God’s faithfulness and the importance of prayer, support, and staying strong in Christ. PVC has been a blessing to my life, and I am grateful for the lessons, prayers, and positive influence it continues to bring into my life. I pray that God continues to strengthen this ministry."
   },
   {
    "name": "Min. Aliu Gabriel",
    "role": "PVCite",
+   "img": "images/people/testimony-aliu-gabriel.jpg",
    "text": "PVC has improved my word study and has taught me the impact of praying and working as a team. Moreso, with my experience with PVC, I’ve learnt more about the relevance of oneness. Finally, I’ve got to discover that if WE believe in it, it’s achievable."
   },
   {
    "name": "Min. Peter Gloria",
    "role": "PVCite",
+   "img": "images/people/min-peter-gloria.jpg",
    "text": "PVC has been a blessing to me. It has strengthened my music life, given me a family, introduced me to genuine love, and fostered my spiritual, personal, and musical growth. To me, PVC is more than a crew; it is home. ❤️"
   },
   {
    "name": "Min. Caleb Yakubu",
    "role": "PVCite",
+   "img": "images/people/testimony-caleb-yakubu.jpg",
    "text": "Potter’s Vessels Crew Intl has been more than a musical community to me, it has been a place of spiritual growth, transformation, and purpose. Through PVC, I’ve grown in my walk with God, discovered my potential, and learned the value of serving God’s Kingdom."
   }
  ]
