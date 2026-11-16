@@ -957,7 +957,7 @@ window.PVC = {
   },
   {
    "name": "Worship Beyond Just the Music",
-   "role": "Written by Min. Peter Gloria · Asst. General Secretary, PVC",
+   "role": "Min. Peter Gloria · Asst. General Secretary, PVC",
    "img": "images/people/min-peter-gloria.jpg",
    "text": "Worship is a beautiful expression of our relationship with God. It is associated often with music, singing, dancing or sounds that fill the places of worship. But worship goes beyond this. Worship is a lifestyle; it involves a posture of your heart and genuine reverence to God. John 4:24 says, \"God is spirit and His worshippers must worship in spirit and in truth.\" This implies that God is not just interested in our outward expressions; rather, He desires a genuine relationship with the heart that bears the expression. True worship is not by how beautifully we sing, how we dance, or how emotional we get during worship sessions. True worship is revealed in the sincerity of our hearts, how intimate we are with God, and how consistent our walk is with Him."
   }
