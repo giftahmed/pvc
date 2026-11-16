@@ -459,7 +459,15 @@ D.logos.forEach((l,i) => {
   if(i === D.logos.length-1){ const im = c.querySelector('img'); im.onerror = () => { im.onerror = null; im.src = LOGO; }; }
   $('logoSteps').appendChild(c);
 });
-D.tabs.forEach((t,i) => {
+const familyTabs = [{
+  id: 'all',
+  label: 'All',
+  groups: D.tabs.flatMap(t => t.groups.map(g => ({
+    title: g.title ? t.label + ' · ' + g.title : t.label,
+    people: g.people
+  })))
+}, ...D.tabs];
+familyTabs.forEach((t,i) => {
   const n = t.groups.reduce((a,g) => a + g.people.length, 0);
   const b = document.createElement('button'); b.type = 'button'; b.setAttribute('role','tab'); b.textContent = t.label + ' · ' + n; if(!i) b.className = 'on';
   const pn = document.createElement('div'); pn.className = 'panel'; pn.id = 'panel-' + t.id; pn.hidden = !!i;

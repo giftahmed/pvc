@@ -28,11 +28,11 @@ window.PVC = {
  "special": [
   {
    "name": "Hon. Dr. John Yusuf",
-   "role": "Special Guest · SA on Road Safety Matters"
+   "role": "Special Adviser to the Executive Governor of Kogi State on Road Safety Matters"
   },
   {
    "name": "Hon. Alex Godwin",
-   "role": "Special Guest"
+   "role": "Former SSA on Grassroot Sensitization to H.E. FGYB · CEO, GODDYDEBRA NIG. LTD."
   }
  ],
  "albums": [
@@ -290,11 +290,15 @@ window.PVC = {
       },
       {
        "name": "Min. Caleb Yakubu",
-       "role": "Prayer Secretary, PVC"
+       "role": "Prayer Secretary, PVC",
+       "img": "images/people/min-caleb-yakubu.png",
+       "full": "images/people/min-caleb-yakubu.png"
       },
       {
        "name": "Min. Victoria Moses",
-       "role": "Asst. Prayer Secretary, PVC"
+       "role": "Asst. Prayer Secretary, PVC",
+       "img": "images/people/min-victoria-moses.jpg",
+       "full": "images/people/full/min-victoria-moses.jpg"
       },
       {
        "name": "Min. Janet Isaac",
@@ -312,26 +316,6 @@ window.PVC = {
    "id": "members",
    "label": "Members",
    "groups": [
-    {
-     "title": "Media & Technical",
-     "people": [
-      {
-       "name": "Pastor Michael Echavor",
-       "role": "Graphics and Media"
-      },
-      {
-       "name": "Mr. Johnson",
-       "role": "Audio and Recordings"
-      },
-      {
-       "name": "JF Sounds",
-       "role": "Sound Engineer",
-       "img": "images/people/jf-sounds.jpg",
-       "full": "images/people/jf-sounds.jpg",
-       "cardClass": "lg2"
-      }
-     ]
-    },
     {
      "title": "PVCites",
      "people": [
@@ -353,7 +337,9 @@ window.PVC = {
       },
       {
        "name": "Min. Joseph",
-       "role": "PVCite"
+       "role": "PVCite",
+       "img": "images/people/min-joseph.png",
+       "full": "images/people/min-joseph.png"
       },
       {
        "name": "Min. Aliu Gabriel",
@@ -366,6 +352,75 @@ window.PVC = {
       {
        "name": "Min. Samuel",
        "role": "PVCite"
+      },
+      {
+       "name": "Min. Favour",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. Favour Raphael",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. Gloria",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. U. Joseph",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. Justina",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. Abraham Gabriel",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. Michael Salawu",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. Juliana and Janet",
+       "role": "PVCites"
+      },
+      {
+       "name": "Min. Zion",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. Courage",
+       "role": "PVCite",
+       "img": "images/people/min-courage-pvcite.jpg",
+       "full": "images/people/full/min-courage-pvcite.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "label": "Media & Technical",
+   "groups": [
+    {
+     "title": null,
+     "people": [
+      {
+       "name": "Pastor Miracle Ekhavor",
+       "role": "Graphics and Media",
+       "key": "pastor-michael-echavor"
+      },
+      {
+       "name": "Mr. Johnson",
+       "role": "Audio and Recordings"
+      },
+      {
+       "name": "JF Sounds",
+       "role": "Sound Engineer",
+       "img": "images/people/jf-sounds.jpg",
+       "full": "images/people/jf-sounds.jpg",
+       "cardClass": "lg2"
       }
      ]
     }
@@ -379,20 +434,20 @@ window.PVC = {
      "title": null,
      "people": [
       {
-       "name": "Min. Samstrings",
-       "role": "Lead Guitarist"
-      },
-      {
        "name": "Min. Solo",
        "role": "Bass Guitarist"
       },
       {
        "name": "Min. Zeebass",
-       "role": "Bass Guitarist"
+       "role": "Bass Guitarist",
+       "img": "images/people/IMG-20261116-WA0034.jpg",
+       "full": "images/people/IMG-20261116-WA0034.jpg"
       },
       {
        "name": "Psalmist Sam",
-       "role": "Bass Guitarist"
+       "role": "Lead Guitarist",
+       "img": "images/people/psalmist-sam.jpg",
+       "full": "images/people/full/psalmist-sam.jpg"
       },
       {
        "name": "Min. Abelkeyz",
@@ -606,6 +661,10 @@ window.PVC = {
       {
        "name": "Mr & Mrs Honest",
        "role": "Married Members"
+      },
+      {
+       "name": "Mr & Mrs Victor Daniel",
+       "role": "Married Members"
       }
      ]
     }
@@ -769,7 +828,7 @@ window.PVC = {
      "members": [
       "Min. Ada Favour",
       "Min. Ada Zion",
-      "Min. Samstrings",
+      "Psalmist Sam",
       "Min. Michael",
       "Min. Miracle",
       "Min. Solomon",
@@ -798,7 +857,7 @@ window.PVC = {
       "Matthew Micah",
       "Min. Gift Ahmed",
       "Min. Ada Favour",
-      "Pst. Miracle Echavor",
+      "Pst. Miracle Ekhavor",
       "Min. Peter Gloria",
       "Min. Alabi Abel",
       "Min. Jimoh Courage",
@@ -869,8 +928,38 @@ window.PVC = {
   {
    "name": "Min. Caleb Yakubu",
    "role": "PVCite",
-   "img": "images/people/testimony-caleb-yakubu.jpg",
+   "img": "images/people/min-caleb-yakubu.png",
    "text": "Potter’s Vessels Crew Intl has been more than a musical community to me, it has been a place of spiritual growth, transformation, and purpose. Through PVC, I’ve grown in my walk with God, discovered my potential, and learned the value of serving God’s Kingdom."
+  },
+  {
+   "name": "Pst. Mrs. Juliana Alabi",
+   "role": "Matron, PVC",
+   "img": "images/people/mummy-juliana.jpg",
+   "text": "We thank God for potters vessel crew that God gave the mandate to see our son Abel and his team. We look so indifferent when the ministry started back then in 2016, but later keyed into the vision when we saw the mighty hand of God and the level of dedication and commitment exhibited by the members. We are glad because though they are young, they carries the zeal of God. They have so much engaged in the things of God which now results in uniting them in becoming one lovely family and experiencing tangible testimonies. We also thank God for the visioneer, Min Courage and other pvcites working together, pulling out resources to see that the vision keep going, my appreciation also goes to all partners and advisers who stood by this vision. I also want to appeal that you all intensify effort to support this vision and be a light to your generation. It's my prayer that God will continue to Keep all of you, uniting you all together regardless of where you find yourself, this vision will not be terminated, nations will hear of you, and may you all fulfil destiny in Jesus name. God bless you all. God bless PVC."
+  },
+  {
+   "name": "Min. Alabi Abel",
+   "role": "Convener, PVC",
+   "img": "images/people/min-alabi-abel.jpg",
+   "text": "PVC is a divine movement that is configured for the fulfilment of God's will and purpose on earth. Mind-blowing experiences, encounters, and testimonies over the years, have authenticated God's faithfulness."
+  },
+  {
+   "name": "Pst. Great Samson",
+   "role": "Guest Minister · Streams of Joy Abuja",
+   "img": "images/people/pst-great-samson.jpg",
+   "text": "Potters vessel crew is a fellowship of young men and women united by deep Passion for the gospel of our Lord Jesus Christ with the burden to see the kingdom of God established in Kogi Central. They are a company of multi talented young men and women God is raising as an instrument of revival in this generation. I strongly believe that God is set to use this army to ignite a wild fire across Kogi Central. Not many people know about them today but in a few moments from now you will feel their impact because what God is birthing through them will speak loudly. I'm genuinely excited to be part of what God is doing through these young believers. Our desire is simple; thy kingdom come, thy will be done in Kogi Central, and by God's grace, that will be our testimony. God is still in the business of using men to fulfil his purpose on earth, he's looking for an available vessel, passionate heart and willing heart. So if you are in Kogi Central and you have a genuine desire to be part of what God is doing, we invited you to join this army. Can you pray, come with your prayer fire, can you sing, come with your voice, can you play an instrument, come with your musical gift, can you write, create, organize serve or contribute in any capacity, this is a room for you , you don't have to be extraordinary gifted, you only need a heart that is passionate about God and willing to be used by Him. This is bigger than a fellowship, this is a kingdom assignment, this is a generation responding to God's call. Kogi centres shall experience revival and we are privileged to be part of this story. This is pastor Great Samson calling you to be part of this move. God bless you"
+  },
+  {
+   "name": "Pst. Daniel James",
+   "role": "Senior Partner, PVC",
+   "img": "images/people/pst-james-daniel.jpg",
+   "text": "Let me use this opportunity to say a big 'thank you' to God Almighty who hath chosen the weak things of the world to confound the things which are mighty. The emergence of PVC by my observations so far was not based on Abel's and his executive's presumptive expertise, not rested on their myopic exclusive contributions; on the contrary, very extensive consultations with external spiritual ministers of long standing national recognition, universal credibility and proven theological integrity were duly involved. PVC has many fathers and mentors and is conscious of being watched constantly by her many mentors, so she is not a lone ranger. PVC is committed to excellence and altruistic services. I see a set of youth who are willing to lay down their lives to pay the ultimate price for the liberation of our faith, Youths who are ready to trade their lives to pay their meals for fasting and groans in the place of prayer till God bring the needed change and the righteousness we are yearning for in our generation, the people that are ready to make up the hedge and stand in the gap before God and their generation, people that are willing to take responsibilities for their family, the church of God and the nation at large. May PVC yield completely to God, and be that vessel He is looking for in such a time like this. May God send help and raise supporters for PVC to relieve you of all your challenges in Jesus name. May the entire member of PVC live long in good health and in full age serving God in truth and in Spirit. Remember you are not alone, your voice matters and your faith is powerful. Encourage one another (Heb.10:25-25,). Learn from each other experience and wisdom. Seek God guidance and empowerment (Pro. 31:26). I will not failed to appreciate our own amiable father and mother, pastor Isaiah A. Alabi and pastor Mrs Julianah Alabi for always being there for the group and actively playing their parental role by watching over the crew, making sure that things are done in the right way and always praying for the unit to succeed. God will lengthen their days on earth in good health and wellness in Jesus mighty name amen."
+  },
+  {
+   "name": "Worship Beyond Just the Music",
+   "role": "Written by Min. Peter Gloria · Asst. General Secretary, PVC",
+   "img": "images/people/min-peter-gloria.jpg",
+   "text": "Worship is a beautiful expression of our relationship with God. It is associated often with music, singing, dancing or sounds that fill the places of worship. But worship goes beyond this. Worship is a lifestyle; it involves a posture of your heart and genuine reverence to God. John 4:24 says, \"God is spirit and His worshippers must worship in spirit and in truth.\" This implies that God is not just interested in our outward expressions; rather, He desires a genuine relationship with the heart that bears the expression. True worship is not by how beautifully we sing, how we dance, or how emotional we get during worship sessions. True worship is revealed in the sincerity of our hearts, how intimate we are with God, and how consistent our walk is with Him."
   }
  ]
 };
