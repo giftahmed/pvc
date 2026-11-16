@@ -195,11 +195,15 @@ dialog[open]{animation:dlg .35s ease-out}dialog[open]::backdrop{animation:fadein
 .grp .cnt{margin-left:auto;font:400 .8rem var(--body);background:var(--flame);color:#fff;border-radius:999px;padding:.1rem .6rem}
 .grp ul{list-style:none;padding:0 1.2rem 1rem;font-size:.95rem;animation:fadein .4s}
 .grp li{padding:.3rem 0;border-bottom:1px dashed rgba(255,255,255,.1)}
-.quotes{columns:300px;column-gap:1.2rem;margin-top:2rem}
-.quote{break-inside:avoid;margin:0 0 1.2rem;padding:2rem 1.6rem 1.4rem;border-radius:16px;background:rgba(255,255,255,.05);border-top:3px solid var(--flame);position:relative}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.2rem;margin-top:2rem;align-items:stretch}
+.quote{box-sizing:border-box;height:340px;margin:0;padding:2rem 1.6rem 1.4rem;border-radius:16px;background:rgba(255,255,255,.05);border-top:3px solid var(--flame);position:relative;display:flex;flex-direction:column}
 .quote::before{content:"“";position:absolute;top:-.2rem;left:1rem;font:800 4rem var(--display);color:var(--flame);opacity:.6}
-.quote blockquote{margin:.6rem 0 1rem;font-style:italic}
-.quote figcaption{display:flex;align-items:center;gap:.7rem}.quote figcaption img{width:48px;height:48px;flex:none;object-fit:cover;border-radius:50%;border:1px solid var(--gold)}.quote figcaption strong{display:block;color:var(--gold)}.quote figcaption span{font-size:.85rem;opacity:.7}
+.quote blockquote{margin:.6rem 0 1rem;font-style:italic;line-height:1.5;height:9em;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6}
+.quote.expanded{height:auto;min-height:340px}
+.quote.expanded blockquote{height:auto;overflow:visible;display:block}
+.quote .read-more{align-self:flex-start;margin:0 0 1rem;padding:0;border:0;background:none;color:var(--gold);font:700 .9rem var(--body);text-decoration:underline;text-underline-offset:.2em;cursor:pointer}
+.quote .read-more[hidden]{display:none}
+.quote figcaption{display:flex;align-items:center;gap:.7rem;margin-top:auto}.quote figcaption img{width:48px;height:48px;flex:none;object-fit:cover;border-radius:50%;border:1px solid var(--gold)}.quote figcaption strong{display:block;color:var(--gold)}.quote figcaption span{font-size:.85rem;opacity:.7}
 .burger{display:none;background:none;border:1px solid var(--gold);color:var(--ash);border-radius:8px;font-size:1.3rem;padding:.1rem .6rem;cursor:pointer}
 @media(max-width:700px){.burger{display:block}nav .links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(20,7,6,.97);padding:1rem 1.25rem;gap:.8rem}nav.open .links{display:flex}nav .links a:not(:last-child){display:inline!important}}
 /* music */
@@ -288,7 +292,7 @@ dialog[open]{animation:dlg .35s ease-out}dialog[open]::backdrop{animation:fadein
         <p class="min"><b>Ministering:</b> Pst. Great Samson · Pst. Johnson Emerald · Pst. Mrs. Eunice · Min. Sam Wisdom · Min. John MBA · PVC</p>
       </article>
     </div>
-    <h3 class="sub">Special recognition</h3>
+    <h3 class="sub">Special recognition and guests</h3>
     <div class="cards big" id="specialCards"></div>
   </div>
 </section>
@@ -489,12 +493,14 @@ D.groups.forEach(c => {
     d.append(s, ul); w.appendChild(d); });
   $('groupCats').append(h, w);
 });
-D.testimonies.forEach(t => { const f = document.createElement('figure'); f.className = 'quote rv';
-  const b = document.createElement('blockquote'); b.textContent = t.text; const c = document.createElement('figcaption');
+D.testimonies.forEach((t,i) => { const f = document.createElement('figure'); f.className = 'quote rv';
+  const b = document.createElement('blockquote'); b.id = 'quote-text-' + i; b.textContent = t.text; const more = document.createElement('button'); more.type = 'button'; more.className = 'read-more'; more.textContent = 'Read more'; more.setAttribute('aria-controls',b.id); more.setAttribute('aria-expanded','false');
+  more.onclick = () => { const expanded = f.classList.toggle('expanded'); more.textContent = expanded ? 'Read less' : 'Read more'; more.setAttribute('aria-expanded',String(expanded)); };
+  const c = document.createElement('figcaption');
   const im = document.createElement('img'); im.src = t.img; im.alt = t.name; im.loading = 'lazy'; im.onerror = () => im.remove();
   const byline = document.createElement('div'); const name = document.createElement('strong'); name.textContent = t.name;
   const role = document.createElement('span'); role.textContent = t.role; byline.append(name, role); c.append(im, byline);
-  f.append(b, c); $('quotes').appendChild(f); });
+  f.append(b, more, c); $('quotes').appendChild(f); more.hidden = b.scrollHeight <= b.clientHeight + 1; });
 $('burger').onclick = () => $('nav').classList.toggle('open');
 document.querySelectorAll('#nav .links a').forEach(a => a.addEventListener('click', () => $('nav').classList.remove('open')));
 

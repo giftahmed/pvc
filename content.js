@@ -99,24 +99,6 @@ window.PVC = {
     "pictorial-2025-16.jpg",
     "pictorial-2025-17.jpg",
     "pictorial-2025-18.jpg",
-    "pictorial-2025-19.jpg",
-    "pictorial-2025-20.jpg",
-    "pictorial-2025-21.jpg",
-    "pictorial-2025-22.jpg",
-    "pictorial-2025-23.jpg",
-    "pictorial-2025-24.jpg",
-    "pictorial-2025-25.jpg",
-    "pictorial-2025-26.jpg",
-    "pictorial-2025-27.jpg",
-    "pictorial-2025-28.jpg",
-    "pictorial-2025-29.jpg",
-    "pictorial-2025-30.jpg",
-    "pictorial-2025-31.jpg",
-    "pictorial-2025-32.jpg",
-    "pictorial-2025-33.jpg",
-    "pictorial-2025-34.jpg",
-    "pictorial-2025-35.jpg",
-    "pictorial-2025-36.jpg",
     "pictorial-2025-37.jpg",
     [
      "min-gideon.jpg",
@@ -394,6 +376,14 @@ window.PVC = {
        "role": "PVCite",
        "img": "images/people/min-courage-pvcite.jpg",
        "full": "images/people/full/min-courage-pvcite.jpg"
+      },
+      {
+       "name": "Min. Miracle",
+       "role": "PVCite"
+      },
+      {
+       "name": "Min. Johnson Patience",
+       "role": "PVCite"
       }
      ]
     }
@@ -515,6 +505,10 @@ window.PVC = {
       {
        "name": "Min. Victor",
        "role": "Pioneer & Senior Partner"
+      },
+      {
+       "name": "Apostle Omaga Godwin",
+       "role": "Senior Partner"
       }
      ]
     },
@@ -535,6 +529,10 @@ window.PVC = {
       },
       {
        "name": "Mr. Caleb",
+       "role": "Partner"
+      },
+      {
+       "name": "Min. John MBA",
        "role": "Partner"
       }
      ]
@@ -605,6 +603,18 @@ window.PVC = {
       },
       {
        "name": "Min. Favour Raphael",
+       "role": "Pioneer"
+      },
+      {
+       "name": "Min. Courage Jimoh",
+       "role": "Pioneer"
+      },
+      {
+       "name": "Min. Alabi Abel",
+       "role": "Pioneer"
+      },
+      {
+       "name": "Min. Matthew Micah",
        "role": "Pioneer"
       },
       {
@@ -900,7 +910,8 @@ window.PVC = {
       "Min. Matthew Micah",
       "Min. Jimoh Courage",
       "Min. Alabi Favour",
-      "Min. Isaac Janet"
+      "Min. Isaac Janet",
+      "Min. Caleb Yakubu"
      ]
     }
    ]
@@ -935,7 +946,7 @@ window.PVC = {
    "name": "Pst. Mrs. Juliana Alabi",
    "role": "Matron, PVC",
    "img": "images/people/mummy-juliana.jpg",
-   "text": "We thank God for potters vessel crew that God gave the mandate to see our son Abel and his team. We look so indifferent when the ministry started back then in 2016, but later keyed into the vision when we saw the mighty hand of God and the level of dedication and commitment exhibited by the members. We are glad because though they are young, they carries the zeal of God. They have so much engaged in the things of God which now results in uniting them in becoming one lovely family and experiencing tangible testimonies. We also thank God for the visioneer, Min Courage and other pvcites working together, pulling out resources to see that the vision keep going, my appreciation also goes to all partners and advisers who stood by this vision. I also want to appeal that you all intensify effort to support this vision and be a light to your generation. It's my prayer that God will continue to Keep all of you, uniting you all together regardless of where you find yourself, this vision will not be terminated, nations will hear of you, and may you all fulfil destiny in Jesus name. God bless you all. God bless PVC."
+   "text": "We thank God for potters vessel crew that God gave the mandate to see our son Abel and his supportive team. We look so indifferent when the ministry started back then in 2016, but later keyed into the vision when we saw the mighty hand of God and the level of dedication and commitment exhibited by the members. We are glad because though they are young, they carries the zeal of God. They have so much engaged in the things of God which now results in uniting them in becoming one lovely family and experiencing tangible testimonies. We also thank God for the visioneer, Min Courage and other pvcites working together, pulling out resources to see that the vision keep going, my appreciation also goes to all partners and advisers who stood by this vision. I also want to appeal that you all intensify effort to support this vision and be a light to your generation. It's my prayer that God will continue to Keep all of you, uniting you all together regardless of where you find yourself, this vision will not be terminated, nations will hear of you, and may you all fulfil destiny in Jesus name. God bless you all. God bless PVC."
   },
   {
    "name": "Min. Alabi Abel",
@@ -947,7 +958,7 @@ window.PVC = {
    "name": "Pst. Great Samson",
    "role": "Guest Minister · Streams of Joy Abuja",
    "img": "images/people/pst-great-samson.jpg",
-   "text": "Potters vessel crew is a fellowship of young men and women united by deep Passion for the gospel of our Lord Jesus Christ with the burden to see the kingdom of God established in Kogi Central. They are a company of multi talented young men and women God is raising as an instrument of revival in this generation. I strongly believe that God is set to use this army to ignite a wild fire across Kogi Central. Not many people know about them today but in a few moments from now you will feel their impact because what God is birthing through them will speak loudly. I'm genuinely excited to be part of what God is doing through these young believers. Our desire is simple; thy kingdom come, thy will be done in Kogi Central, and by God's grace, that will be our testimony. God is still in the business of using men to fulfil his purpose on earth, he's looking for an available vessel, passionate heart and willing heart. So if you are in Kogi Central and you have a genuine desire to be part of what God is doing, we invited you to join this army. Can you pray, come with your prayer fire, can you sing, come with your voice, can you play an instrument, come with your musical gift, can you write, create, organize serve or contribute in any capacity, this is a room for you , you don't have to be extraordinary gifted, you only need a heart that is passionate about God and willing to be used by Him. This is bigger than a fellowship, this is a kingdom assignment, this is a generation responding to God's call. Kogi centres shall experience revival and we are privileged to be part of this story. This is pastor Great Samson calling you to be part of this move. God bless you"
+   "text": "Potters vessel crew is a fellowship of young men and women united by deep Passion for the gospel of our Lord Jesus Christ with the burden to see the kingdom of God established in Kogi Central. They are a company of multi talented young men and women God is raising as an instrument of revival in this generation. I strongly believe that God is set to use this army to ignite a wild fire across Kogi Central. Not many people know about them today but in a few moments from now you will feel their impact because what God is birthing through them will speak loudly. I'm genuinely excited to be part of what God is doing through these young believers. Our desire is simple; thy kingdom come, thy will be done in Kogi Central, and by God's grace, that will be our testimony. God is still in the business of using men to fulfil his purpose on earth, he's looking for an available vessel, passionate heart and willing heart. So if you are in Kogi Central and you have a genuine desire to be part of what God is doing, we invited you to join this army. Can you pray, come with your prayer fire, can you sing, come with your voice, can you play an instrument, come with your musical gift, can you write, create, organize, serve or contribute in any capacity, this is a room for you , you don't have to be extraordinarily gifted, you only need a heart that is passionate about God and willing to be used by Him. This is bigger than a fellowship, this is a kingdom assignment, this is a generation responding to God's call. Kogi centres shall experience revival and we are privileged to be part of this story. This is pastor Great Samson calling you to be part of this move. God bless you"
   },
   {
    "name": "Pst. Daniel James",
