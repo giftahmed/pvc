@@ -198,9 +198,9 @@ dialog[open]{animation:dlg .35s ease-out}dialog[open]::backdrop{animation:fadein
 .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.2rem;margin-top:2rem;align-items:stretch}
 .quote{box-sizing:border-box;height:340px;margin:0;padding:2rem 1.6rem 1.4rem;border-radius:16px;background:rgba(255,255,255,.05);border-top:3px solid var(--flame);position:relative;display:flex;flex-direction:column}
 .quote::before{content:"“";position:absolute;top:-.2rem;left:1rem;font:800 4rem var(--display);color:var(--flame);opacity:.6}
-.quote blockquote{margin:.6rem 0 1rem;font-style:italic;line-height:1.5;height:9em;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6}
+.quote blockquote{margin:.6rem 0 1rem;font-style:italic;line-height:1.5;max-height:9em;overflow:hidden}
 .quote.expanded{height:auto;min-height:340px}
-.quote.expanded blockquote{height:auto;overflow:visible;display:block}
+.quote.expanded blockquote{max-height:none;overflow:visible}
 .quote .read-more{align-self:flex-start;margin:0 0 1rem;padding:0;border:0;background:none;color:var(--gold);font:700 .9rem var(--body);text-decoration:underline;text-underline-offset:.2em;cursor:pointer}
 .quote .read-more[hidden]{display:none}
 .quote figcaption{display:flex;align-items:center;gap:.7rem;margin-top:auto}.quote figcaption img{width:48px;height:48px;flex:none;object-fit:cover;border-radius:50%;border:1px solid var(--gold)}.quote figcaption strong{display:block;color:var(--gold)}.quote figcaption span{font-size:.85rem;opacity:.7}
@@ -493,6 +493,10 @@ D.groups.forEach(c => {
     d.append(s, ul); w.appendChild(d); });
   $('groupCats').append(h, w);
 });
+const updateReadMore = () => document.querySelectorAll('#quotes .quote').forEach(f => {
+  const b = f.querySelector('blockquote'), more = f.querySelector('.read-more');
+  if(!f.classList.contains('expanded')) more.hidden = b.scrollHeight <= b.clientHeight + 1;
+});
 D.testimonies.forEach((t,i) => { const f = document.createElement('figure'); f.className = 'quote rv';
   const b = document.createElement('blockquote'); b.id = 'quote-text-' + i; b.textContent = t.text; const more = document.createElement('button'); more.type = 'button'; more.className = 'read-more'; more.textContent = 'Read more'; more.setAttribute('aria-controls',b.id); more.setAttribute('aria-expanded','false');
   more.onclick = () => { const expanded = f.classList.toggle('expanded'); more.textContent = expanded ? 'Read less' : 'Read more'; more.setAttribute('aria-expanded',String(expanded)); };
@@ -500,7 +504,10 @@ D.testimonies.forEach((t,i) => { const f = document.createElement('figure'); f.c
   const im = document.createElement('img'); im.src = t.img; im.alt = t.name; im.loading = 'lazy'; im.onerror = () => im.remove();
   const byline = document.createElement('div'); const name = document.createElement('strong'); name.textContent = t.name;
   const role = document.createElement('span'); role.textContent = t.role; byline.append(name, role); c.append(im, byline);
-  f.append(b, more, c); $('quotes').appendChild(f); more.hidden = b.scrollHeight <= b.clientHeight + 1; });
+  f.append(b, more, c); $('quotes').appendChild(f); });
+updateReadMore();
+window.addEventListener('resize', updateReadMore);
+if(document.fonts && document.fonts.ready) document.fonts.ready.then(updateReadMore);
 $('burger').onclick = () => $('nav').classList.toggle('open');
 document.querySelectorAll('#nav .links a').forEach(a => a.addEventListener('click', () => $('nav').classList.remove('open')));
 
