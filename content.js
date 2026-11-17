@@ -784,6 +784,7 @@ window.PVC = {
       "Min. Kareem Destiny",
       "Min. Ada Zion",
       "Min. Isaac Janet",
+      "Min. Julius Stephen",
       "Min. Samuel",
       "Min. Justina"
      ]
@@ -823,7 +824,8 @@ window.PVC = {
       "Min. Yakubu Caleb",
       "Min. Gabriel Aliu",
       "Min. Alabi Abel",
-      "Min. Jimoh Courage"
+      "Min. Jimoh Courage",
+      "Min. Julius Stephen"
      ]
     },
     {
