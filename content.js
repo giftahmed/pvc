@@ -509,6 +509,10 @@ window.PVC = {
       {
        "name": "Apostle Omaga Godwin",
        "role": "Senior Partner"
+      },
+      {
+       "name": "Pst. Johnson Emerald",
+       "role": "Senior Partner"
       }
      ]
     },
@@ -946,7 +950,7 @@ window.PVC = {
    "name": "Pst. Mrs. Juliana Alabi",
    "role": "Matron, PVC",
    "img": "images/people/mummy-juliana.jpg",
-   "text": "We thank God for potters vessel crew that God gave the mandate to see our son Abel and his supportive team. We look so indifferent when the ministry started back then in 2016, but later keyed into the vision when we saw the mighty hand of God and the level of dedication and commitment exhibited by the members. We are glad because though they are young, they carries the zeal of God. They have so much engaged in the things of God which now results in uniting them in becoming one lovely family and experiencing tangible testimonies. We also thank God for the visioneer, Min Courage and other pvcites working together, pulling out resources to see that the vision keep going, my appreciation also goes to all partners and advisers who stood by this vision. I also want to appeal that you all intensify effort to support this vision and be a light to your generation. It's my prayer that God will continue to Keep all of you, uniting you all together regardless of where you find yourself, this vision will not be terminated, nations will hear of you, and may you all fulfil destiny in Jesus name. God bless you all. God bless PVC."
+   "text": "We thank God for potters vessel crew that God gave the mandate to our son Abel and his supportive team. We look so indifferent when the ministry started back then in 2016, but later keyed into the vision when we saw the mighty hand of God and the level of dedication and commitment exhibited by the members. We are glad because though they are young, they carries the zeal of God. They have so much engaged in the things of God which now results in uniting them in becoming one lovely family and experiencing tangible testimonies. We also thank God for the visioneer, Min Courage and other pvcites working together, pulling out resources to see that the vision keep going, my appreciation also goes to all partners and advisers who stood by this vision. I also want to appeal that you all intensify effort to support this vision and be a light to your generation. It's my prayer that God will continue to Keep all of you, uniting you all together regardless of where you find yourself, this vision will not be terminated, nations will hear of you, and may you all fulfil destiny in Jesus name. God bless you all. God bless PVC."
   },
   {
    "name": "Min. Alabi Abel",
