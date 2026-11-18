@@ -16,13 +16,15 @@ window.PVC = {
    "name": "Pst. Johnson Emerald"
   },
   {
-   "name": "Pst. Mrs. Eunice"
+   "name": "Mrs. Eunice Omonanyi",
+   "img": "images/people/mrs-eunice.jpg",
+   "full": "images/people/full/mrs-eunice.jpg"
   },
   {
    "name": "Min. Sam Wisdom"
   },
   {
-   "name": "Min. John MBA"
+   "name": "Min. John Mba"
   }
  ],
  "special": [
@@ -100,6 +102,7 @@ window.PVC = {
     "pictorial-2025-17.jpg",
     "pictorial-2025-18.jpg",
     "pictorial-2025-37.jpg",
+    "pictorial-2025-38.jpg",
     [
      "min-gideon.jpg",
      "Min. Gideon",
@@ -332,6 +335,12 @@ window.PVC = {
        "role": "PVCite"
       },
       {
+       "name": "Min. Julius Stephen",
+       "role": "PVCite",
+       "img": "images/people/min-julius-stephen.jpg",
+       "full": "images/people/full/min-julius-stephen.jpg"
+      },
+      {
        "name": "Min. Samuel",
        "role": "PVCite"
       },
@@ -536,7 +545,7 @@ window.PVC = {
        "role": "Partner"
       },
       {
-       "name": "Min. John MBA",
+       "name": "Min. John Mba",
        "role": "Partner"
       }
      ]
@@ -604,6 +613,12 @@ window.PVC = {
       {
        "name": "Min. Esther Ibidokun",
        "role": "Pioneer"
+      },
+      {
+       "name": "Min. Julius Stephen",
+       "role": "Pioneer",
+       "img": "images/people/min-julius-stephen.jpg",
+       "full": "images/people/full/min-julius-stephen.jpg"
       },
       {
        "name": "Min. Favour Raphael",
